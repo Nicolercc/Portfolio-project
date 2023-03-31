@@ -1,15 +1,16 @@
 /* /* css requirements: 
  1. must use the :hover selector 
- 2. must use css grid to organize content
+ 2. must use css GRID to organize some content
  3. when the screen is a different size, it should have visual changes. 
 */
 
-/* my design: 
-1. center joke generator
-2. make text x-large */
+/* design ideas: 
+   1. find cool fonts for the page
+   2. research cool background 
+   3. add animation to the btn */
 
-:hover {
-  /* must use this on something */
+.hidden {
+  display: none;
 }
 
 #home-screen-container {
@@ -44,19 +45,71 @@ h1 {
   padding: 0;
 }
 
-/* design ideas: 
-   1. find cool fonts for the page
-   2. research cool background 
-   3. add animation to the btn */
 #generate-joke-btn {
   font-size: 15px;
   padding: 12px 24px;
-  margin-top: 24px;
+  /* margin-top: 10px; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
   color: rgba(132, 98, 144, 0.838);
   text-decoration-color: rgb(75, 63, 73);
+  cursor: pointer;
+  border-radius: 20%;
+
+  /* add an arrow animation */
+}
+
+#another-joke-screen {
+  display: grid;
+  margin: auto;
+}
+
+h2 #joke-screen {
+  font-size: 3rem;
+  place-content: center;
+}
+
+#next-joke-text {
+  padding: 5%;
+  padding-left: 10%;
+}
+
+#another-joke-btn {
+  padding: 8px 10px;
+  margin-left: 45%;
+  margin-right: 30%;
+  background-color: rgba(238, 228, 228, 0.831);
+  cursor: pointer;
+  border-color: rgba(238, 228, 228, 0.874);
+  border-radius: 20%;
+}
+button:hover {
+  /* width: 200px; */
+  border: 2px solid rgba(238, 228, 228, 0.831);
+  /* background: transparent; */
+  color: rgba(165, 138, 138, 0.831);
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 30%;
+}
+/* P#next-joke-text {
+  padding: 10%;
+  border: 2px solid rgba(173, 157, 169, 0.741);
+  background-color: rgba(226, 216, 218, 0.546);
+  margin: 5%;
+  text-size-adjust: large;
+} */
+
+.box {
+  width: 500px;
+  height: 200px;
+  border: 2px solid rgba(127, 109, 109, 0.657);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  place-items: center; */
+  background-color: rgba(202, 187, 194, 0.301);
 }
 
 /* background image links*/
@@ -98,3 +151,5 @@ body {
     background-size: 2750px;
   }
 }
+
+/* additional.html styling */

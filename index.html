@@ -11,16 +11,23 @@
 
   <body>
     <header>
-      <div id="home-screen-container">
+      <div id="home-screen-container" class="hidden">
         <h1>Joke Generator</h1>
+        <h4>by Nicole Rodriguez</h4>
         <button id="generate-joke-btn">Generate Joke</button>
       </div>
-      <!-- the div below will have a style= 'display-none' until called -->
-      <div id="joke-screen" style="display: none">
+      <!-- the div below will have a style of 'display-none' until called -->
+      <div id="joke-screen" class="hidden">
         <h2>Joke</h2>
         <p id="joke-text">
-          <!-- joke here -->
+          <!-- joke will pop up here -->
         </p>
+        <form id="another-joke-screen" class="hidden">
+          <p id="next-joke-text" class="box">
+            <!-- next joke pops up here -->
+          </p>
+          <button id="another-joke-btn">Generate Another Joke</button>
+        </form>
       </div>
     </header>
     <script src="main.js"></script>
