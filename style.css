@@ -72,6 +72,7 @@ h2 #joke-screen {
 #next-joke-text {
   padding: 5%;
   padding-left: 10%;
+  font-size: larger;
 }
 
 #another-joke-btn {

@@ -24,7 +24,7 @@ const jokeText = document.querySelector("#next-joke-text");
 const nextJoke = document.querySelector("#another-joke-btn");
 jokeBtn.addEventListener("click", (event) => {
   fetch(
-    "https://random-stuff-api.p.rapidapi.com/joke/random?exclude=dirty%2Cmoney",
+    "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist",
     options
   )
     .then((response) => response.json())
@@ -40,7 +40,7 @@ jokeBtn.addEventListener("click", (event) => {
 nextJoke.addEventListener("click", (event) => {
   event.preventDefault();
   fetch(
-    "https://random-stuff-api.p.rapidapi.com/joke/random?exclude=dirty%2Csex",
+    "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist",
     options
   )
     .then((response) => response.json())
