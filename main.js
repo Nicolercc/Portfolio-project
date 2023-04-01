@@ -30,7 +30,7 @@ jokeBtn.addEventListener("click", (event) => {
     .then((response) => response.json())
     .then((response) => {
       jokeParagraph.innerText = response.message;
-      jokeParagraph.classList.add("hidden");
+      //   jokeParagraph.classList.add("box");
       jokeScreen.classList.remove("hidden");
       homeScreen.style.display = "none";
     })

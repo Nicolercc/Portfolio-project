@@ -13,6 +13,19 @@
   display: none;
 }
 
+.about-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 5%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.about-link :hover {
+  color: rgb(63, 92, 93);
+}
+
 #home-screen-container {
   display: flex;
   flex-direction: column;
@@ -154,3 +167,66 @@ body {
 }
 
 /* additional.html styling */
+.about-h1 {
+  margin: 20px;
+  font-size: medium;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.about-me-page {
+  display: grid;
+  grid-template-columns: [first] 100% auto 1fr;
+  grid-template-rows: [row1-start] 25% auto 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+  height: 100vh;
+  margin: 0;
+}
+
+.about-h1 {
+  grid-area: header;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.website-description {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 20px;
+}
+/* .website-description {
+  padding: 10px;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+} */
+
+.text1 {
+  margin-left: 70px;
+  margin-right: 10px;
+  font-size: large;
+  line-height: 170%;
+}
+
+/* h2 {
+  font-size: larger;
+} */
+.about-me {
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: 60px;
+  line-height: 170%;
+}
+
+@media (max-width: 768px) {
+  .website-description {
+    grid-template-columns: 1fr;
+  }
+}
