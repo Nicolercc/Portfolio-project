@@ -1,4 +1,5 @@
 #Joke Generator
+
 The Joke Generator is a web application that allows users to generate random jokes using the Random Stuff API. This simple yet entertaining application is designed to provide a lighthearted experience for users who want to have a quick laugh.
 
 #Setup
