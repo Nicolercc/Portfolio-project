@@ -1,23 +1,28 @@
-# Portfolio-project
+#Joke Generator
+The Joke Generator is a web application that allows users to generate random jokes using the Random Stuff API. This simple yet entertaining application is designed to provide a lighthearted experience for users who want to have a quick laugh.
 
-#Front-end visual requirements
+#Setup
 
-1. Your application must have at least two .html files that are connected.
-2. Your application must include one or more .css files that are linked to one or more pages.
-3. Your application must include one or more .js files that are linked to one or more pages.
-4. You must make use of CSS Grid to organize your content on at least one of your pages.
-5. You must use the :hover selector in at least one CSS rule.
-6. You must use an HTML form on at least one of your pages.
-7. All of your pages must have some visual changes that occur when the screen is a different size.
+Getting started with the Joke Generator is easy. Simply follow the steps below:
 
-#Front-end interactivity requirements
+Clone the repository: Clone the Joke Generator repository to your local machine using the Git clone command in your terminal or by downloading the ZIP file from the repository's main page.
 
-1. On page load, an external API request must be made. Upon receiving a successful response, something visual on the page should change.
-2. When a form is submitted on your page, JavaScript should prevent the default behavior of that form and some other effect should take place.
-3. There should be at least one way to incorrectly submit the form. When the form is incorrectly submitted, an error message should be added to the DOM for the user.
-4. Based on a button click or form submission, an external API request must be made. Upon receiving a successful response, something visual on the page should change.
+Navigate to the root directory: Once you have the project files on your local machine, navigate to the root directory of the project using your terminal or file explorer.
 
-#Interview requirements
+Open the index.html file: To launch the Joke Generator, open the index.html file in your web browser of choice. This will bring up the Joke Generator's main page.
 
-1. In a meeting with an instructor or volunteer, you should be able to describe the application's theme and purpose and relate your application to your interests or personal narrative.
-2. In a meeting with an instructor or volunteer, you should be able to demonstrate a front-end feature and describe the code in technical terms.
+Generate a joke: To generate a random joke, click the "Generate Joke" button on the main page. The Joke Generator will fetch a joke from the Random Stuff API and display it on the screen.
+
+Generate another joke: If you want to generate another joke, click the "Generate Another Joke" button that appears after the first joke is displayed. The Joke Generator will fetch another joke from the API and display it on the screen.
+
+#Technologies Used
+
+The Joke Generator is built using a variety of technologies, including:
+
+HTML: The HTML language is used to structure the Joke Generator's web page and its various elements.
+
+CSS: CSS is used to style the Joke Generator's web page and make it visually appealing.
+
+JavaScript: JavaScript is used to handle the Joke Generator's dynamic content, including generating jokes and displaying them on the screen.
+
+Random Stuff API: The Random Stuff API is used to fetch random jokes for the Joke Generator to display.
