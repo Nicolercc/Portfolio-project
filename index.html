@@ -20,7 +20,8 @@
           id="generate_joke_form"
           style="display: flex; flex-direction: column; text-align: center"
         >
-          <div>
+          <button id="generate-joke-btn" type="submit">Generate Joke</button>
+          <div class="form-div">
             <input
               type="checkbox"
               id="ext_request_input"
@@ -28,7 +29,6 @@
             />
             <label for="ext_request_input">Allow for external requests</label>
           </div>
-          <button id="generate-joke-btn" type="submit">Generate Joke</button>
           <p class="hidden error-text" id="submit_error"></p>
         </form>
       </div>
@@ -46,7 +46,10 @@
           class="hidden"
           style="display: flex; flex-direction: column; text-align: center"
         >
-          <div>
+          <button id="another-joke-btn" type="submit">
+            Generate Another Joke
+          </button>
+          <div class="ext_request_input">
             <input
               type="checkbox"
               id="ext_request_input"
@@ -54,9 +57,6 @@
             />
             <label for="ext_request_input">Allow for external requests</label>
           </div>
-          <button id="another-joke-btn" type="submit">
-            Generate Another Joke
-          </button>
         </form>
       </div>
     </header>

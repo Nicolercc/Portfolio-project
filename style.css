@@ -75,8 +75,6 @@ h1 {
   cursor: pointer;
   border-radius: 20%;
   background-color: rgba(225, 219, 219, 0.695);
-
-  /* add an arrow animation */
 }
 
 #another-joke-screen {
@@ -105,21 +103,12 @@ h2 #joke-screen {
   border-radius: 20%;
 }
 button:hover {
-  /* width: 200px; */
   border: 2px solid rgba(238, 228, 228, 0.831);
-  /* background: transparent; */
   color: rgba(165, 138, 138, 0.831);
   cursor: pointer;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 30%;
 }
-/* P#next-joke-text {
-  padding: 10%;
-  border: 2px solid rgba(173, 157, 169, 0.741);
-  background-color: rgba(226, 216, 218, 0.546);
-  margin: 5%;
-  text-size-adjust: large;
-} */
 
 .box {
   width: 500px;
@@ -211,11 +200,6 @@ body {
   gap: 20px;
   margin: 20px;
 }
-/* .website-description {
-  padding: 10px;
-  grid-row: 2 / -1;
-  grid-column: 1 / -1;
-} */
 
 .text1 {
   margin-left: 70px;
@@ -224,9 +208,6 @@ body {
   line-height: 170%;
 }
 
-/* h2 {
-  font-size: larger;
-} */
 .about-me {
   margin-left: 50px;
   margin-right: 40px;
@@ -234,8 +215,32 @@ body {
   line-height: 170%;
 }
 
-@media (max-width: 768px) {
-  .website-description {
-    grid-template-columns: 1fr;
+.form-div {
+  margin-top: 15px;
+}
+
+.ext_request_input {
+  margin-left: 13%;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 797px) {
+  /* joke page */
+  .box {
+    /* margin: auto;
+    padding: 20%; */
+    width: auto;
+    height: auto;
+  }
+
+  /* about me page */
+  .text1 {
+    font-size: 10px;
+  }
+
+  .website-description,
+  .about-me {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
