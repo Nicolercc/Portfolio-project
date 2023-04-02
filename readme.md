@@ -1,8 +1,8 @@
-#Joke Generator
+# Joke Generator
 
 The Joke Generator is a web application that allows users to generate random jokes using the Random Stuff API. This simple yet entertaining application is designed to provide a lighthearted experience for users who want to have a quick laugh.
 
-#Setup
+# Setup
 
 Getting started with the Joke Generator is easy. Simply follow the steps below:
 
@@ -16,14 +16,9 @@ Generate a joke: To generate a random joke, click the "Generate Joke" button on 
 
 Generate another joke: If you want to generate another joke, click the "Generate Another Joke" button that appears after the first joke is displayed. The Joke Generator will fetch another joke from the API and display it on the screen.
 
-#Technologies Used
+# Technologies Used
 
-The Joke Generator is built using a variety of technologies, including:
-
-HTML: The HTML language is used to structure the Joke Generator's web page and its various elements.
-
-CSS: CSS is used to style the Joke Generator's web page and make it visually appealing.
-
-JavaScript: JavaScript is used to handle the Joke Generator's dynamic content, including generating jokes and displaying them on the screen.
-
-Random Stuff API: The Random Stuff API is used to fetch random jokes for the Joke Generator to display.
+HTML
+CSS
+JavaScript
+Random Stuff API
