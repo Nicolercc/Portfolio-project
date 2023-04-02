@@ -18,7 +18,7 @@ Generate another joke: If you want to generate another joke, click the "Generate
 
 # Technologies Used
 
-HTML
-CSS
-JavaScript
+HTML,
+CSS,
+JavaScript, and
 Random Stuff API

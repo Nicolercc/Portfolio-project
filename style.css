@@ -52,6 +52,8 @@ body {
   height: 100vh;
 }
 
+/* add media queries */
+
 h1 {
   font-size: 48px;
   margin: 0;
@@ -122,8 +124,6 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: grid;
-  place-items: center; */
   background-color: rgba(202, 187, 194, 0.301);
 }
 
@@ -134,7 +134,7 @@ body {
   background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
   background-size: cover;
   -webkit-animation: slidein 100s;
-  animation: slidein 100s;
+  animation: slidein 50s;
 
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -168,9 +168,13 @@ body {
 }
 
 /* additional.html styling */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500&family=Cormorant+Garamond:wght@600&family=Righteous&display=swap");
+
 .about-h1 {
   margin: 20px;
   font-size: medium;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold 900;
 }
 
 .text {

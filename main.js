@@ -16,7 +16,7 @@ const options = {
 //   .catch((err) => console.error(err));
 
 const jokeBtn = document.querySelector("#generate-joke-btn");
-const jokeParagraph = document.querySelector("#joke-text");
+const jokeParagraph = document.querySelector("#next-joke-text");
 const jokeScreen = document.querySelector("#joke-screen");
 const homeScreen = document.querySelector("#home-screen-container");
 const jokeText = document.querySelector("#next-joke-text");
@@ -24,13 +24,13 @@ const jokeText = document.querySelector("#next-joke-text");
 const nextJoke = document.querySelector("#another-joke-btn");
 jokeBtn.addEventListener("click", (event) => {
   fetch(
-    "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist",
+    "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist%2black",
     options
   )
     .then((response) => response.json())
     .then((response) => {
+      // jokeParagraph.classList.add("box");
       jokeParagraph.innerText = response.message;
-      //   jokeParagraph.classList.add("box");
       jokeScreen.classList.remove("hidden");
       homeScreen.style.display = "none";
     })
