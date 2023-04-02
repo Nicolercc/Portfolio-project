@@ -16,7 +16,21 @@
       <div id="home-screen-container" class="hidden">
         <h1>Joke Generator</h1>
         <h4>by Nicole Rodriguez</h4>
-        <button id="generate-joke-btn">Generate Joke</button>
+        <form
+          id="generate_joke_form"
+          style="display: flex; flex-direction: column; text-align: center"
+        >
+          <div>
+            <input
+              type="checkbox"
+              id="ext_request_input"
+              name="ext_request_input"
+            />
+            <label for="ext_request_input">Allow for external requests</label>
+          </div>
+          <button id="generate-joke-btn" type="submit">Generate Joke</button>
+          <p class="hidden error-text" id="submit_error"></p>
+        </form>
       </div>
       <!-- the div below will have a style of 'display-none' until called -->
       <div id="joke-screen" class="hidden">
@@ -24,11 +38,25 @@
         <p id="joke-text">
           <!-- joke will pop up here -->
         </p>
-        <form id="another-joke-screen" class="hidden">
-          <p id="next-joke-text" class="box">
-            <!-- next joke pops up here -->
-          </p>
-          <button id="another-joke-btn">Generate Another Joke</button>
+        <p id="next-joke-text" class="box">
+          <!-- next joke pops up here -->
+        </p>
+        <form
+          id="another-joke-form"
+          class="hidden"
+          style="display: flex; flex-direction: column; text-align: center"
+        >
+          <div>
+            <input
+              type="checkbox"
+              id="ext_request_input"
+              name="ext_request_input"
+            />
+            <label for="ext_request_input">Allow for external requests</label>
+          </div>
+          <button id="another-joke-btn" type="submit">
+            Generate Another Joke
+          </button>
         </form>
       </div>
     </header>

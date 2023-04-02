@@ -13,6 +13,10 @@
   display: none;
 }
 
+.error-text {
+  color: red;
+}
+
 .about-link {
   position: absolute;
   top: 10px;
