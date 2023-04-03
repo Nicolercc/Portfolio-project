@@ -9,12 +9,12 @@ const options = {
   },
 };
 
+// variables
 const jokeBtn = document.querySelector("#generate-joke-btn");
 const jokeParagraph = document.querySelector("#next-joke-text");
 const jokeScreen = document.querySelector("#joke-screen");
 const homeScreen = document.querySelector("#home-screen-container");
 const jokeText = document.querySelector("#next-joke-text");
-// console.log(homeScreen);
 const nextJoke = document.querySelector("#another-joke-btn");
 
 const generateJokeForm = document.querySelector("#generate_joke_form");
@@ -35,7 +35,7 @@ generateJokeForm.addEventListener("submit", (event) => {
 
   if (areExternalRequestsAllowed) {
     fetch(
-      "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist%2black",
+      "https://random-stuff-api.p.rapidapi.com/joke/puns?exclude=dirty%2Csex%2racist",
       options
     )
       .then((response) => response.json())
